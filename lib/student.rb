@@ -31,11 +31,12 @@ class Student
   def save
     if @id
     else
-      sql = <<-SQL
+      student = <<-SQL
         INSERT INTO students (name, grade)
         VALUES (?, ?)
       SQL
-      DB[:conn].execute(sql, @name, @grade)
+      DB[:conn].execute(student, @name, @grade)
+
     end
   end
 end

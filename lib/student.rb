@@ -31,7 +31,7 @@ class Student
 
   def save
     if @id
-
+      self.update
     else
       student = <<-SQL
         INSERT INTO students (name, grade)

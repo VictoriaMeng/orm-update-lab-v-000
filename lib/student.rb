@@ -12,4 +12,7 @@ class Student
     @grade = grade
     @id = id
   end
+
+  def selfcreate_table
+  end
 end
